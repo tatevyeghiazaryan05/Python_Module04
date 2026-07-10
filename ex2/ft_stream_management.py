@@ -31,8 +31,9 @@ if __name__ == "__main__":
             print("---\n")
             print(s)
             print("---")
-            print("Enter new file name (or empty): ")
             try:
+                sys.stdout.write("Enter new file name (or empty): ")
+                sys.stdout.flush()
                 saving_file_name = sys.stdin.readline()
                 saving_file_name = saving_file_name.strip()
                 if (saving_file_name):
