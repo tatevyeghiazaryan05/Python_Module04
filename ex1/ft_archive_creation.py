@@ -19,9 +19,9 @@ if __name__ == "__main__":
             print(f"File '{file_name}' closed.")
             split_content = content.split('\n')
             new_list = []
-            for content in split_content:
-                if content != '':
-                    new_str = content + '#'
+            for line in split_content:
+                if line != '':
+                    new_str = line + '#'
                     new_list.append(new_str)
             s = ''
             for i in new_list:
