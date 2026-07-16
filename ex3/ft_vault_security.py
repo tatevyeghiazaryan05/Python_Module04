@@ -1,5 +1,6 @@
-def secure_archive(file_name: str, action: str = "read", add_line: str = None) -> tuple[bool, str]:
-    if action in  ("read", "write"):
+def secure_archive(file_name: str, action: str = "read",
+                   add_line: str | None = None) -> tuple[bool, str]:
+    if action in ("read", "write"):
         if action == "read":
             try:
                 with open(file_name, "r") as file:
