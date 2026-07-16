@@ -10,7 +10,7 @@ def secure_archive(file_name: str, action: str = "read", add_line: str = None) -
         elif action == "write":
             try:
                 with open(file_name, "w") as file:
-                    if add_line:
+                    if add_line or add_line == "":
                         file.write(add_line)
                         return (True, "Content successfully written to file")
                     else:
